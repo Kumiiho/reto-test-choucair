@@ -1,0 +1,26 @@
+
+plugins {
+    id 'java'
+}
+
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+
+    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '4.2.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '4.2.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '4.2.0'
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '4.2.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.141.59'
+
+
+
+}
+
